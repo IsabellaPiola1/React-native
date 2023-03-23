@@ -41,7 +41,9 @@ function validationImc(){
                 value={weight}
                 placeholder="Ex. 75.365"
                 keyboardType='numeric'/>
-                <Button title="Calcular IMC"/>
+                <Button
+                 onPress={() => validationImc()}
+                 title={textButton}/>
             </View>
               <ResultImc messageResultImc={messageImc} resultImc={imc}/>
         </View>
